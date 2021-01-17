@@ -5,6 +5,7 @@ module.exports = app => {
 
   // Retrieve all blog posts
   router.get("/", blogposts.findAll);
+  router.post("/", blogposts.create);
 
   app.use('/api/blogposts', router);
 };
